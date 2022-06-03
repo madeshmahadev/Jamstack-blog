@@ -9,31 +9,5 @@
   <body>
     <!-- Include the script that builds the page and powers Netlify CMS -->
     <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
-    <div class="footer wrapper">
-        <nav class="nav">
-          <div>
-            <a href="https://github.com/knadh/hugo-ink">Ink</a> theme on
-            <a href="https://gohugo.io">Hugo</a>
-          </div>
-        </nav>
-      </div>
-      
-
-      <script>
-        feather.replace();
-      </script>
-    
-      
-      <script>
-        if (window.netlifyIdentity) {
-          window.netlifyIdentity.on('init', (user) => {
-            if (!user) {
-              window.netlifyIdentity.on('login', () => {
-                document.location.href = '/admin/';
-              });
-            }
-          });
-        }
-      </script> 
 </body>
 </html>
